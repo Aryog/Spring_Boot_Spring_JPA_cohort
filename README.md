@@ -1,0 +1,1 @@
+### Exclusively Spring JPA focused

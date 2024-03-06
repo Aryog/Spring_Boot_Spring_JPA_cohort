@@ -9,14 +9,9 @@ import java.util.Collections;
 public class FirstappApplication {
 
 	public static void main(String[] args) {
-		var app = new SpringApplication(FirstappApplication.class);
-		app.setDefaultProperties(Collections.singletonMap("spring.profiles.active","dev"));
-		var ctx = app.run(args);
+		SpringApplication.run(FirstappApplication.class);
 
-		MyFirstService myFirstService = ctx.getBean(MyFirstService.class);
-		System.out.println(myFirstService.tellAStory());
-		System.out.println(myFirstService.getCustomProperty());
-		System.out.println(myFirstService.getCustomPropertyInt());
+
 	}
 
 }
