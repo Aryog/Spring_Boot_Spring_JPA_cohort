@@ -1,5 +1,6 @@
 package com.aryog.firstapp;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import org.hibernate.annotations.CreationTimestamp;
 
@@ -41,6 +42,7 @@ public class Student {
     @JoinColumn(
             name = "school_id"
     )
+    @JsonBackReference
     private School school;
 
     public Student() {
