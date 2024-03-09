@@ -1,6 +1,7 @@
 package com.aryog.firstapp;
 
 import jakarta.persistence.*;
+import org.hibernate.annotations.CreationTimestamp;
 
 @Entity
 @Table(name = "T_STUDENT")
@@ -15,8 +16,32 @@ public class Student {
     @Column(unique = true)
     private String email;
     private int age;
+
+
+
     @Column(updatable = false)
+    @CreationTimestamp
     private String creationDate;
+
+    @OneToOne(
+            mappedBy = "student",
+            cascade = CascadeType.ALL
+    )
+    private StudentProfile studentProfile;
+
+    public StudentProfile getStudentProfile() {
+        return studentProfile;
+    }
+
+    public void setStudentProfile(StudentProfile studentProfile) {
+        this.studentProfile = studentProfile;
+    }
+
+    @ManyToOne
+    @JoinColumn(
+            name = "school_id"
+    )
+    private School school;
 
     public Student() {
     }
@@ -67,4 +92,21 @@ public class Student {
     public void setAge(int age) {
         this.age = age;
     }
+
+    public String getCreationDate() {
+        return creationDate;
+    }
+
+    public void setCreationDate(String creationDate) {
+        this.creationDate = creationDate;
+    }
+
+    public School getSchool() {
+        return school;
+    }
+
+    public void setSchool(School school) {
+        this.school = school;
+    }
+
 }
