@@ -50,6 +50,7 @@ public class School {
         return students;
     }
 
+
     public void setStudents(List<Student> students) {
         this.students = students;
     }
