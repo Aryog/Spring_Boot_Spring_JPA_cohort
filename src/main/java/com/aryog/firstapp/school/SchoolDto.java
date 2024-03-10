@@ -1,4 +1,4 @@
-package com.aryog.firstapp;
+package com.aryog.firstapp.school;
 
 import java.util.List;
 

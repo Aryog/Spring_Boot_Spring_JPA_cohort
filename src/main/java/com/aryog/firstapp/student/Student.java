@@ -1,5 +1,7 @@
-package com.aryog.firstapp;
+package com.aryog.firstapp.student;
 
+import com.aryog.firstapp.school.School;
+import com.aryog.firstapp.studentprofile.StudentProfile;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import org.hibernate.annotations.CreationTimestamp;

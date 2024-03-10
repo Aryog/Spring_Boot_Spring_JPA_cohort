@@ -1,5 +1,6 @@
-package com.aryog.firstapp;
+package com.aryog.firstapp.studentprofile;
 
+import com.aryog.firstapp.student.Student;
 import jakarta.persistence.*;
 
 @Entity

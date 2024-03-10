@@ -1,4 +1,4 @@
-package com.aryog.firstapp;
+package com.aryog.firstapp.student;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

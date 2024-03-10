@@ -1,5 +1,6 @@
-package com.aryog.firstapp;
+package com.aryog.firstapp.school;
 
+import com.aryog.firstapp.student.Student;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

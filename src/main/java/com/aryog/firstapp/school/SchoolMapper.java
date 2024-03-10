@@ -1,5 +1,6 @@
-package com.aryog.firstapp;
+package com.aryog.firstapp.school;
 
+import com.aryog.firstapp.school.SchoolDto;
 import org.springframework.stereotype.Service;
 
 @Service

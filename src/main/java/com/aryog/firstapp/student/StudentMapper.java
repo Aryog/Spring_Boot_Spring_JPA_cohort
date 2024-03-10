@@ -1,6 +1,7 @@
-package com.aryog.firstapp;
+package com.aryog.firstapp.student;
 
 
+import com.aryog.firstapp.school.School;
 import org.springframework.stereotype.Service;
 
 @Service

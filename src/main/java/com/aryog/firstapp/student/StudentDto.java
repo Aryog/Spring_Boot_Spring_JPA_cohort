@@ -1,4 +1,4 @@
-package com.aryog.firstapp;
+package com.aryog.firstapp.student;
 
 public record StudentDto(
         String firstname,

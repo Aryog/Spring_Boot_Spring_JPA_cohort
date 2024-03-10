@@ -1,5 +1,6 @@
-package com.aryog.firstapp;
+package com.aryog.firstapp.student;
 
+import com.aryog.firstapp.student.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

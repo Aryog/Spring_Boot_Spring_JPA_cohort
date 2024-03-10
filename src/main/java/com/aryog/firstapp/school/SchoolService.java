@@ -1,4 +1,4 @@
-package com.aryog.firstapp;
+package com.aryog.firstapp.school;
 
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
