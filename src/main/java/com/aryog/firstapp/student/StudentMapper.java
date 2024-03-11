@@ -2,6 +2,7 @@ package com.aryog.firstapp.student;
 
 
 import com.aryog.firstapp.school.School;
+import jakarta.validation.constraints.Null;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -14,6 +15,9 @@ public class StudentMapper {
                 student.getEmail());
     }
     public Student toStudent(StudentDto dto){
+        if(dto == null){
+            throw new NullPointerException("The student Dto should not be null.");
+        }
         var student = new Student();
         student.setFirstname(dto.firstname());
         student.setLastname(dto.lastname());

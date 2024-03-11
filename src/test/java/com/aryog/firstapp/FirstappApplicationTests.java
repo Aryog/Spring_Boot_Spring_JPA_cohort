@@ -10,4 +10,7 @@ class FirstappApplicationTests {
 	void contextLoads() {
 	}
 
+	@Test
+	void name() {
+	}
 }
